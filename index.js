@@ -5,11 +5,6 @@
 //         data asynchronously over the web.
 //         fetch(url, {options})
 
-// fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata")
-//     .then(response => response.json())
-//     .then(data => console.log(data.meals[0].strMealThumb))
-//     .catch(error => console.error(error));
-
 async function fetchImage(){
 
     try{
