@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+    <style> 
+    
+    body {
+        font-family: 'Fredoka', sans-serif; /* Use Fredoka font */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        position: relative;
+        background-color: #6E9079; /* This background color is now only for the body */
+    }
+
+    /* Style for "Here are our results" to place it at top-left */
+    h1:first-of-type {
+        color: white;
+        font-size: 5vw;
+        text-align: left;
+        margin: 10px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    /* Dish Name styling, placed below the yellow circle with left indentation */
+    h1:nth-of-type(2) {
+        color: #41645A;
+        font-size: 5vw;
+        text-align: left;
+        margin: 10px;
+        position: absolute;
+        top: 82%; /* Adjusted based on yellow circle's position */
+        left: 10%;
+    }
+
+    /* Ingredients styling, placed below the dish name with left indentation */
+    h1:nth-of-type(3) {
+        color: #41645A;
+        font-size: 4vw;
+        text-align: left;
+        margin: 10px;
+        position: absolute;
+        top: 105%; /* Adjusted based on previous elements */
+        left: 10%;
+    }
+
+    /* Paragraph styling for the ingredients list, placed below ingredients */
+    p {
+        color: #41645A;
+        font-size: 2vw;
+        text-align: left;
+        margin: 10px;
+        position: absolute;
+        top: 118%; /* Adjusted for space below ingredients */
+        left: 10%;
+    }
+
+    /* Circle styling */
+    .yellow-circle {
+        width: 30vw;  /* Circle size relative to viewport width */
+        height: 30vw;
+        background-color: #FFD66D;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Rectangle with rounded corners at the bottom half */
+    .rounded-rectangle {
+        width: 100%; /* Full width */
+        height: 30%; /* Bottom half of the screen */
+        background-color: #D1D8CA;
+        border-radius: 30px 30px 0 0; /* Rounded top corners */
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1; /* Places it behind the content */
+    }
+
+    </style>
+</head>
+<body>
+
+<h1>Here are our Results!</h1>
+<h1>**DISH NAME GOES HERE**</h1>
+<h1>Ingredients</h1>
+<p>**INGREDIENTS LIST GOES HERE**</p>
+
+<!-- Add the rectangle here -->
+<div class="rounded-rectangle"></div>
+<div class="yellow-circle"></div>
+
+</body>
+</html>
