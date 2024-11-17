@@ -43,7 +43,7 @@
 
     /* Ingredients styling, placed below the dish name with left indentation */
     h1:nth-of-type(3) {
-        color: #41645A;
+        color: white;
         font-size: 4vw;
         text-align: left;
         margin: 10px;
@@ -75,6 +75,18 @@
         transform: translate(-50%, -50%);
     }
 
+    /* Circle photo styling */
+    .img {
+        width: 50px;
+        height: 50px;
+        background-color: #FFD66D;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
     /* Rectangle with rounded corners at the bottom half */
     .rounded-rectangle {
         width: 100%; /* Full width */
@@ -92,11 +104,18 @@
 <body>
 
 <h1>Here are our Results!</h1>
-<h1>**DISH NAME GOES HERE**</h1>
-<h1>Ingredients</h1>
-<p>**INGREDIENTS LIST GOES HERE**</p>
+<h1>Pasta</h1>
+<h1>Recipe</h1>
+<p>Boil Water: Fill a large pot with water and bring it to a boil. Add a generous amount of salt (about 1-2 tablespoons) to season the pasta.
+
+    Add Pasta: Once the water is boiling, add the pasta and stir immediately to prevent it from sticking. Cook according to the package instructions, usually 8-12 minutes, until it's al dente (firm to the bite).
+    
+    Drain Pasta: When the pasta is cooked, drain it in a colander, but reserve a cup of the pasta water in case you need it to adjust the sauce's consistency.
+    
+    Add Sauce and Serve: Return the pasta to the pot and toss with your desired sauce. Use a bit of reserved pasta water to loosen the sauce if needed. Serve hot and enjoy!</p>
 
 <!-- Add the rectangle here -->
+<img src="images\Ellipse 15.png"></img>
 <div class="rounded-rectangle"></div>
 <div class="yellow-circle"></div>
 
