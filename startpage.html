@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Fredoka', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            background-color: #6E9079;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Header Styling (WISK text in top left) */
+        .header {
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 12vw;
+        }
+
+        .header p {
+            font-size: 3vw;
+            color: #FFD66D;
+        }
+
+        /* Image Styling */
+        .image-container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 50%;
+        }
+
+        .image-container img {
+            max-width: 80%;  /* Adjust to make the image appropriately sized */
+            max-height: 80%;
+        }
+
+        /* Start Now Button */
+        .start-button {
+            background-color: #41645A;
+            color: white;
+            font-size: 1.5rem;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-bottom: 40px;
+            transition: background-color 0.3s;
+        }
+
+        .start-button:hover {
+            background-color: #355e47;
+        }
+
+    </style>
+    <title>Start Page</title>
+</head>
+<body>
+
+    <!-- Header Section (WISK text and description) -->
+    <div class="header">
+        <h1>WISK</h1>
+        <p>A recipe ready for you!</p>
+    </div>
+
+    <!-- Image in the middle of the page -->
+    <div class="image-container">
+        <img src="../cutiehack2024/images/Whisk.png" alt="Recipe Image"> 
+    </div>
+
+    <!-- Start Now Button at the bottom -->
+    <button class="start-button" id="startNowBtn">Start Now!</button>
+
+    <script>
+        // When the "Start Now!" button is clicked, redirect to the home page
+        document.getElementById('startNowBtn').addEventListener('click', function() {
+            window.location.href = 'homepage.html';  // Redirect to the home page
+        });
+    </script>
+
+</body>
+</html>

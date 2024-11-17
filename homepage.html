@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Fredoka', sans-serif;
+            background-color: #6E9079;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Top design section */
+        .top-design {
+            width: 100%;
+            height: 30vh;
+            background-color: #FFD66D;
+            border-bottom-left-radius: 50% 30px;
+            border-bottom-right-radius: 50% 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .top-design h1 {
+            font-size: 4vw;
+            color: white;
+        }
+
+        /* Search Bar Styling */
+        .search-bar {
+            width: 80%;
+            margin-top: -10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            font-size: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Main Content Section */
+        .main-content {
+            width: 80%;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Home Text */
+        .home-text {
+            font-size: 3vw;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        /* Buttons container */
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+
+        /* Button Styling */
+        .button {
+            font-family: 'Fredoka', sans-serif;
+            height: 160px;  /* Increased height for all buttons */
+            padding: 15px;
+            border: none;
+            border-radius: 10px;  /* Rectangular with rounded corners */
+            font-size: 2rem;
+            background-color: #41645A;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;  /* Default width for buttons */
+        }
+
+        .button:hover {
+            background-color: #355e47;
+        }
+
+        /* Flexbox for Buttons (Saved Recipes & Profile next to each other) */
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            gap: 60px; /* Adds space between the buttons */
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        /* Left button is longer than the right button */
+        .button-left {
+            width: 60%;  /* Left button takes 60% of the container width */
+        }
+
+        .button-right {
+            width: 40%;  /* Right button takes 40% of the container width */
+        }
+
+        /* Start New Recipe Button (Takes full width) */
+        .start-recipe-button {
+            width: 100%;
+        }
+    </style>
+    <title>Home Page</title>
+</head>
+<body>
+
+    <!-- Top Design Section -->
+    <div class="top-design">
+        <h1>Recipe App</h1>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search recipes...">
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="home-text">
+            Home
+        </div>
+
+        <!-- Buttons Container -->
+        <div class="buttons-container">
+            <!-- Buttons Group (Saved Recipes & Profile next to each other) -->
+            <div class="button-group">
+                <button class="button button-left">Saved Recipes</button>
+                <button class="button button-right">Profile</button>
+            </div>
+
+            <!-- Start a New Recipe Button -->
+            <button class="button start-recipe-button" id="startRecipeBtn">Start a New Recipe</button>
+        </div>
+    </div>
+
+    <script>
+        // When the "Start a New Recipe" button is clicked, redirect to the recipe.html page
+        document.getElementById('startRecipeBtn').addEventListener('click', function() {
+            window.location.href = 'recipe.html';  // Redirect to recipe.html
+        });
+    </script>
+
+</body>
+</html>
